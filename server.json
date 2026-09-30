@@ -1,0 +1,10 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "print-spine-paper-radar",
+  "description": "Model Context Protocol (MCP) server for print engineering: Book spine thickness calculation (Amazon KDP, Couche, Offset), paper GSM & ream shipping weight, sheet imposition yield optimization, and TAPPI paper unit conversions.",
+  "repository": {
+    "url": "https://github.com/tudadada/print-spine-paper-radar",
+    "source": "github"
+  },
+  "homepage": "https://insight.surf"
+}

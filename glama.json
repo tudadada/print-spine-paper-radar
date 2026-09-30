@@ -1,0 +1,8 @@
+{
+  "$schema": "https://glama.ai/mcp/schemas/server.json",
+  "name": "print-spine-paper-radar",
+  "description": "Model Context Protocol (MCP) server for print engineering: Book spine thickness calculation (Amazon KDP, Couche, Offset), paper GSM & ream shipping weight, sheet imposition yield optimization, and TAPPI paper unit conversions.",
+  "maintainers": [
+    "tudadada"
+  ]
+}
