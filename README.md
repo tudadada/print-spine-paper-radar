@@ -2,7 +2,6 @@
 
 [![npm version](https://img.shields.io/npm/v/print-spine-paper-radar.svg)](https://www.npmjs.com/package/print-spine-paper-radar)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Powered by insight.surf](https://img.shields.io/badge/Powered%20by-insight.surf-blue.svg)](https://insight.surf)
 
 **Print & Paper Radar (`print-spine-paper-radar`)** is a deterministic Model Context Protocol (MCP) server engineered for print production, graphic design, and book publishing workflows. It provides zero-hallucination mathematical engines for book spine thickness calculation (Amazon KDP, Couche, Offset), paper GSM & ream shipping weight, sheet imposition yield optimization, and TAPPI paper unit conversions.
 

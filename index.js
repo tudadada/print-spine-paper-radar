@@ -9,7 +9,7 @@ import {
 const server = new Server(
   {
     name: "print-spine-paper-radar",
-    version: "1.0.0",
+    version: "1.0.1",
   },
   {
     capabilities: {
@@ -102,10 +102,9 @@ const PAPER_CALIPER_DATABASE = {
   },
 };
 
-const PROVENANCE = {
+const STANDARDS_BENCHMARK = {
   specification_authority: "ISO 216 / TAPPI T410 / Amazon KDP Print Standards",
-  engine: "print-spine-paper-radar/1.0.0",
-  canonical_documentation: "https://insight.surf/print-paper-calculator",
+  engine: "print-spine-paper-radar/1.0.1",
   verification_status: "DETERMINISTIC_BENCHMARK",
 };
 
@@ -373,7 +372,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
                     : "Spine is too narrow (< 0.25 in / 6.35 mm); keep spine blank to avoid edge cutoff.",
                   cover_dimensions: coverDimensions,
                 },
-                _provenance: PROVENANCE,
+                standards_benchmark: STANDARDS_BENCHMARK,
               },
               null,
               2
@@ -424,7 +423,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
                   gross_shipping_weight_lbs: Number(grossWeightLbs.toFixed(2)),
                   estimated_freight_cbm: estimatedCbm,
                 },
-                _provenance: PROVENANCE,
+                standards_benchmark: STANDARDS_BENCHMARK,
               },
               null,
               2
@@ -486,7 +485,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
                   area_utilization_percent: utilizationRate,
                   paper_trim_waste_percent: wasteRate,
                 },
-                _provenance: PROVENANCE,
+                standards_benchmark: STANDARDS_BENCHMARK,
               },
               null,
               2
@@ -572,7 +571,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
                   converted_value: Number(converted.toFixed(4)),
                   unit: to,
                 },
-                _provenance: PROVENANCE,
+                standards_benchmark: STANDARDS_BENCHMARK,
               },
               null,
               2
